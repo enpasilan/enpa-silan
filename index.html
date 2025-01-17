@@ -97,7 +97,7 @@
       <div class="introduction">
         <h1>Hello</h1>
         <p>I’m a tech enthusiast with a knack for turning ideas into impactful solutions. With over a decade of international experience in roles such as CTO, technopreneur, technical lead, developer, and product manager, I excel at bridging the gap between technology and business to deliver meaningful results. I enjoy collaborating with diverse teams across the globe to create exceptional customer experiences and drive successful outcomes.</p>
-        <button class="btn-contact mb-4" disabled><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-person-fill" viewBox="0 0 16 16">
+        <button class="btn-contact mb-4" onclick="openResume()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-person-fill" viewBox="0 0 16 16">
           <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2m-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0m-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11"/>
         </svg> Resume</button>
         <button class="btn-contact mb-4"  onclick="openMail()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
@@ -121,6 +121,10 @@
     const whatsappURL = `mailto:${email}?subject=${subject}&body=${message}`;
     
     window.open(whatsappURL, '_blank');
+  }
+  function openResume() {
+    const resumeLink = "https://pblicdoc.s3.ap-southeast-5.amazonaws.com/Resume_2025_v1.pdf";
+    window.open(resumeLink, '_blank');
   }
 </script>
 </body>
